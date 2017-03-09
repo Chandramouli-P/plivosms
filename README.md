@@ -18,9 +18,7 @@
 - Home folder: /home/ubuntu
 - Ports to be opened in firewall (Kannel server): 80, 3000, 13000, 13013 (All are TCP ports)
 - Ports to be opened in firewall (SMSC server): 88 (TCP)
-- You enjoy in working with Linux and Telecom, and also have some knowledge about internal components of Kannel like BearerBox, SMSBox, protocols, SMSC, SMPP, VoIP 
-
-etc.
+- You enjoy in working with Linux and Telecom, and also have some knowledge about internal components of Kannel like BearerBox, SMSBox, protocols, SMSC, SMPP, VoIP etc.
 - Execute the commands at the command prompt. Here, I am not adding my home directory or # or $ symbol before starting of the commands. 
 
 ### Note: 
@@ -30,12 +28,12 @@ etc.
 
 ### Setting up the Kannel server:
 *********************************
-cd /home/ubuntu
-sudo apt-get update
-sudo apt-get upgrade
-sudo apt-get install build-essential wget libssl-dev libncurses5-dev libnewt-dev  libxml2-dev linux-headers-$(uname -r) libsqlite3-dev uuid-dev lynx-cur
-sudo apt-get build-dep linux-image-$(uname -r)
-sudo apt-get install kernel-package
+cd /home/ubuntu  
+sudo apt-get update  
+sudo apt-get upgrade  
+sudo apt-get install build-essential wget libssl-dev libncurses5-dev libnewt-dev  libxml2-dev linux-headers-$(uname -r) libsqlite3-dev uuid-dev lynx-cur  
+sudo apt-get build-dep linux-image-$(uname -r)  
+sudo apt-get install kernel-package  
 
 bison -V
 sudo apt-get remove bison
